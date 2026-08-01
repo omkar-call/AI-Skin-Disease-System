@@ -1,0 +1,26 @@
+# Virtual Environment
+venv/
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# Dataset (DO NOT UPLOAD)
+ai_model/dataset/
+ai_model/dataset/**
+backend/ai_model/dataset/
+backend/ai_model/dataset/**
+
+# Uploads
+backend/uploads/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Git
+.git
