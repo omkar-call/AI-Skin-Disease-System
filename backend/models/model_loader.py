@@ -18,7 +18,7 @@ CLASS_NAMES = [
     "vasc"
 ]
 
-BASE_DIR = Path(__file__).resolve().parents[2]
+BASE_DIR = Path(__file__).resolve().parents[1]
 
 possible_paths = [
     BASE_DIR / "saved_models" / "best_model.pth",
