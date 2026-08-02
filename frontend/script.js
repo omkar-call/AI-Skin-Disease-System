@@ -1,8 +1,7 @@
 // =====================================
 // Dermascope AI — Frontend Logic
 // =====================================
-
-const API_URL = "http://127.0.0.1:5000/predict";
+const API_URL = "https://ai-skin-disease-system.onrender.com/predict";
 const MAX_FILE_SIZE = 10 * 1024 * 1024; // 10MB
 
 // ---------- Elements ----------
