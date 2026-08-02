@@ -18,13 +18,21 @@ CLASS_NAMES = [
     "vasc"
 ]
 
-# Project root directory
-# C:\AI-Skin-Disease-System
+# Project root directory when running locally (Windows dev):
+# C:\AI-Skin-Disease-System\backend\models\model_loader.py
+# parents[2] -> C:\AI-Skin-Disease-System
 BASE_DIR = Path(__file__).resolve().parents[2]
+
+# App root directory when running inside the Docker container on Render.
+# The Dockerfile does `COPY backend/ .`, which flattens the extra
+# "backend" folder away, so this file ends up at /app/models/model_loader.py
+# parents[1] -> /app
+APP_DIR = Path(__file__).resolve().parents[1]
 
 possible_paths = [
     BASE_DIR / "ai_model" / "saved_models" / "best_model.pth",
     BASE_DIR / "backend" / "ai_model" / "saved_models" / "best_model.pth",
+    APP_DIR / "ai_model" / "saved_models" / "best_model.pth",
 ]
 
 MODEL_PATH = None
